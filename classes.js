@@ -8,6 +8,7 @@ function start () {
   one()
   two()  
   three()
+  makeVisible()
   // Your turn! Create a new function called `two`, then call it from here.
 }
 
@@ -35,3 +36,7 @@ three = () => {
   three.classList.toggle('purple');
 }
 // CREATE FUNCTION makeVisible HERE
+makeVisible = () => {
+  var invisibleFour = document.getElementsByClassName('invisible')[0];
+  invisibleFour.classList.toggle('visible');
+}
